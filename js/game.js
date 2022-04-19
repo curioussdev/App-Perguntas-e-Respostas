@@ -25,12 +25,20 @@ let questions = [
         "answer": 3
       },
       {
-        "question": " Como você escreve 'Hello World' em uma caixa de alerta?",
+        "question": "Como você escreve 'Hello World' em uma caixa de alerta?",
         "choice1": "msgBox('Hello World');",
         "choice2": "alertBox('Hello World');",
         "choice3": "msg('Hello World');",
         "choice4": "alert('Hello World');",
         "answer": 4
+      },
+      {
+        "question": "Como descrever o Billadas?",
+        "choice1": "O melhor",
+        "choice2": "O cara sheipado",
+        "choice3": "the king",
+        "choice4": "The Goat",
+        "answer": 1
       }
 ]
 
