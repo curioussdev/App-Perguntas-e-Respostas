@@ -2,7 +2,7 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
 /*Heads up Display*/
-const questionCounterText = document.getElementById('questionCounter');
+const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById('score')
 
 let currentQuestion = {}
@@ -67,7 +67,7 @@ getNewQuestion = () => {
     }
 
     questionCouter++;
-    /*HUD*/ questionCounterText.innerText = `${questionCouter}/${MAX_QUESTIONS}`
+    /*HUD*/ progressText.innerText = `Perguntas ${questionCouter}/${MAX_QUESTIONS}`
 
     const questionIndex = Math.floor(Math.random() * avaliableQuestions.length);
     currentQuestion = avaliableQuestions[questionIndex];
