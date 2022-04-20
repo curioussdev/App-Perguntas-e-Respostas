@@ -62,20 +62,13 @@ let questions = [
         "choice3": "As vezes",
         "choice4": "Não vou mesmo",
         "answer": 2
-      },{
-        "question": "Qual o nome completo do professor Mbuku Ditutala? ",
-        "choice1": "Mbuku Ditutala",
-        "choice2": "Joana Perna Mbuku",
-        "choice3": "Mbukera da Djamba",
-        "choice4": "The Mbuku",
-        "answer": 1
-      },
+      }
 ]
 
 // CONSTANTS
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 7;
+const MAX_QUESTIONS = 6;
 
 startGame = () =>{
     questionCounter = 0;
