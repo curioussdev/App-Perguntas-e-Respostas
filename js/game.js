@@ -63,7 +63,7 @@ let questions = [
         "choice4": "Não vou mesmo",
         "answer": 2
       },{
-        "question": "Qual o nome completo do professor Mbuku Ditutala ",
+        "question": "Qual o nome completo do professor Mbuku Ditutala? ",
         "choice1": "Mbuku Ditutala",
         "choice2": "Joana Perna Mbuku",
         "choice3": "Mbukera da Djamba",
