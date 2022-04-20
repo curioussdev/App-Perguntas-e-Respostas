@@ -95,6 +95,12 @@ choices.forEach( choice => {
         const classToApply =
         selectedAnswer == currentQuestion.answer ? 'correcta' : 'incorrecta';
 
+        /* Implementando pontuação dinámica*/
+        if(classToApply === 'correcta'){
+            incrementScore(CORRECT_BONUS);
+        }
+
+
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout( () =>{
@@ -106,6 +112,9 @@ choices.forEach( choice => {
     });
 });
 
-
+incrementScore = num => {
+    score +=num;
+    scoreText.innerText = score;
+}
 
 startGame()
