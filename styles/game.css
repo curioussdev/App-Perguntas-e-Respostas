@@ -28,3 +28,29 @@
 .inconrrect{
     background-color: #dc3545;
 }
+
+/* Heads up Display - Munitor de Alerta*/
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(25, 106, 131);
+    font-weight: 600;
+}
+.hud-main-text{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    padding-bottom: 3rem;
+    color: #56a5eb;
+}
+#score{
+    font-size: 5rem;
+    font-weight: 600;
+    padding-bottom: 3rem;
+    color: #56a5eb;
+}

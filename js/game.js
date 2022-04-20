@@ -1,6 +1,10 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
+/*Heads up Display*/
+const questionCounterText = document.getElementById('questionCounter');
+const scoreText = document.getElementById('score')
+
 let currentQuestion = {}
 let acceptingAnswers = false;
 let score = 0;
@@ -63,6 +67,8 @@ getNewQuestion = () => {
     }
 
     questionCouter++;
+    /*HUD*/ questionCounterText.innerText = `${questionCouter}/${MAX_QUESTIONS}`
+
     const questionIndex = Math.floor(Math.random() * avaliableQuestions.length);
     currentQuestion = avaliableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -97,7 +103,9 @@ choices.forEach( choice => {
         }, 1000);
         
         
-    })
-})
+    });
+});
+
+
 
 startGame()
