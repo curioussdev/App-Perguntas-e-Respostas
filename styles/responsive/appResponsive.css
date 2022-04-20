@@ -1,0 +1,10 @@
+@media (max-width: 575px){
+    .btn{
+        width: 85px;
+        font-size: 10px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    
+}

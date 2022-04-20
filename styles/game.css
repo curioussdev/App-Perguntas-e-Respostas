@@ -66,3 +66,29 @@
     background-color: #56a5eb;
     width: 0%;
 }
+
+
+/* RESPONSIVIDADE */
+
+
+@media (max-width: 475px){
+    .choice-container{
+        
+    }
+    #hud{
+       
+    }
+    #hud-item{
+        
+    }
+    .progressBar{
+        width: 10rem;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .container{
+        size: 50px;
+    }
+    
+}
