@@ -5,6 +5,10 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById('score')
 
+/*Progress Bar */
+
+const progressBarFull = document.getElementById("progressBarFull");
+
 let currentQuestion = {}
 let acceptingAnswers = false;
 let score = 0;
@@ -43,13 +47,35 @@ let questions = [
         "choice3": "the king",
         "choice4": "The Goat",
         "answer": 1
-      }
+      },
+      {
+        "question": "Como se caga?",
+        "choice1": "Sentado",
+        "choice2": "De pé",
+        "choice3": "De lado",
+        "choice4": "Voando",
+        "answer": 1
+      },{
+        "question": "Você vai sempre pra FAU?",
+        "choice1": "Sempre",
+        "choice2": "Quase sempre",
+        "choice3": "As vezes",
+        "choice4": "Não vou mesmo",
+        "answer": 2
+      },{
+        "question": "Qual o nome completo do professor Mbuku Ditutala ",
+        "choice1": "Mbuku Ditutala",
+        "choice2": "Joana Perna Mbuku",
+        "choice3": "Mbukera da Djamba",
+        "choice4": "The Mbuku",
+        "answer": 1
+      },
 ]
 
 // CONSTANTS
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 7;
 
 startGame = () =>{
     questionCounter = 0;
@@ -68,6 +94,8 @@ getNewQuestion = () => {
 
     questionCouter++;
     /*HUD*/ progressText.innerText = `Perguntas ${questionCouter}/${MAX_QUESTIONS}`
+    //Update the progress Bar
+    progressBarFull.style.width = `${(questionCouter/MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * avaliableQuestions.length);
     currentQuestion = avaliableQuestions[questionIndex];
